@@ -15,6 +15,7 @@
 		3F7E50F92094BB9A0021AAE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7E50F72094BB9A0021AAE6 /* LaunchScreen.storyboard */; };
 		3F7E51042094BB9A0021AAE6 /* IOS_Werkstuk2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E51032094BB9A0021AAE6 /* IOS_Werkstuk2Tests.swift */; };
 		3F7E510F2094BB9A0021AAE6 /* IOS_Werkstuk2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E510E2094BB9A0021AAE6 /* IOS_Werkstuk2UITests.swift */; };
+		3F7E51202094BC0A0021AAE6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E511F2094BC0A0021AAE6 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3F7E510A2094BB9A0021AAE6 /* IOS_Werkstuk2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOS_Werkstuk2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7E510E2094BB9A0021AAE6 /* IOS_Werkstuk2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Werkstuk2UITests.swift; sourceTree = "<group>"; };
 		3F7E51102094BB9A0021AAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F7E511F2094BC0A0021AAE6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,13 @@
 		3F7E50EA2094BB9A0021AAE6 /* IOS_Werkstuk2 */ = {
 			isa = PBXGroup;
 			children = (
+				3F7E50FA2094BB9A0021AAE6 /* Info.plist */,
 				3F7E50EB2094BB9A0021AAE6 /* AppDelegate.swift */,
 				3F7E50ED2094BB9A0021AAE6 /* ViewController.swift */,
-				3F7E50EF2094BB9A0021AAE6 /* Main.storyboard */,
-				3F7E50F52094BB9A0021AAE6 /* Assets.xcassets */,
-				3F7E50F72094BB9A0021AAE6 /* LaunchScreen.storyboard */,
-				3F7E50FA2094BB9A0021AAE6 /* Info.plist */,
 				3F7E50F22094BB9A0021AAE6 /* IOS_Werkstuk2.xcdatamodeld */,
+				3F7E511C2094BBBB0021AAE6 /* StoryBoards */,
+				3F7E511E2094BBCD0021AAE6 /* ViewControllers */,
+				3F7E511D2094BBC40021AAE6 /* Assets */,
 			);
 			path = IOS_Werkstuk2;
 			sourceTree = "<group>";
@@ -126,6 +128,31 @@
 				3F7E51102094BB9A0021AAE6 /* Info.plist */,
 			);
 			path = IOS_Werkstuk2UITests;
+			sourceTree = "<group>";
+		};
+		3F7E511C2094BBBB0021AAE6 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				3F7E50EF2094BB9A0021AAE6 /* Main.storyboard */,
+				3F7E50F72094BB9A0021AAE6 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		3F7E511D2094BBC40021AAE6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3F7E50F52094BB9A0021AAE6 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		3F7E511E2094BBCD0021AAE6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F7E511F2094BC0A0021AAE6 /* HomeViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +292,7 @@
 				3F7E50EE2094BB9A0021AAE6 /* ViewController.swift in Sources */,
 				3F7E50F42094BB9A0021AAE6 /* IOS_Werkstuk2.xcdatamodeld in Sources */,
 				3F7E50EC2094BB9A0021AAE6 /* AppDelegate.swift in Sources */,
+				3F7E51202094BC0A0021AAE6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

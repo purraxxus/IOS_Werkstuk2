@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import MapKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet var mapView: MKMapView!
+    @IBOutlet var updateButton: UIButton!
+    @IBOutlet var lastUpdated: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
