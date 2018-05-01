@@ -9,7 +9,6 @@
 import Foundation
 
 class VilloStation {
-    var number: Int
     var name: String
     var adress: String
     var latitude: Double
@@ -21,8 +20,7 @@ class VilloStation {
     var availableBikeStands: Int
     var availableBikes: Int
     
-    init(number: int, name: String, adress: String, latitude: Double, longitude: Double, banking: Bool, bonus: Bool, status: Bool, bikeStands: Int, availableBikeStands: Int, availableBikes: Int) {
-        self.number = number
+    init(name: String, adress: String, latitude: Double, longitude: Double, banking: Bool, bonus: Bool, status: Bool, bikeStands: Int, availableBikeStands: Int, availableBikes: Int) {
         self.name = name
         self.adress = adress
         self.latitude = latitude
