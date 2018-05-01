@@ -16,6 +16,8 @@
 		3F7E51042094BB9A0021AAE6 /* IOS_Werkstuk2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E51032094BB9A0021AAE6 /* IOS_Werkstuk2Tests.swift */; };
 		3F7E510F2094BB9A0021AAE6 /* IOS_Werkstuk2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E510E2094BB9A0021AAE6 /* IOS_Werkstuk2UITests.swift */; };
 		3F7E51202094BC0A0021AAE6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E511F2094BC0A0021AAE6 /* HomeViewController.swift */; };
+		3F7E5123209899570021AAE6 /* VilloStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E5122209899570021AAE6 /* VilloStation.swift */; };
+		3F7E512520989CDE0021AAE6 /* Annotiation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E512420989CDE0021AAE6 /* Annotiation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		3F7E510E2094BB9A0021AAE6 /* IOS_Werkstuk2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Werkstuk2UITests.swift; sourceTree = "<group>"; };
 		3F7E51102094BB9A0021AAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F7E511F2094BC0A0021AAE6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3F7E5122209899570021AAE6 /* VilloStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VilloStation.swift; sourceTree = "<group>"; };
+		3F7E512420989CDE0021AAE6 /* Annotiation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotiation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 				3F7E50F22094BB9A0021AAE6 /* IOS_Werkstuk2.xcdatamodeld */,
 				3F7E511C2094BBBB0021AAE6 /* StoryBoards */,
 				3F7E511E2094BBCD0021AAE6 /* ViewControllers */,
+				3F7E5121209899400021AAE6 /* Model */,
 				3F7E511D2094BBC40021AAE6 /* Assets */,
 			);
 			path = IOS_Werkstuk2;
@@ -153,6 +158,15 @@
 				3F7E511F2094BC0A0021AAE6 /* HomeViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3F7E5121209899400021AAE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F7E5122209899570021AAE6 /* VilloStation.swift */,
+				3F7E512420989CDE0021AAE6 /* Annotiation.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,9 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7E512520989CDE0021AAE6 /* Annotiation.swift in Sources */,
 				3F7E50EE2094BB9A0021AAE6 /* ViewController.swift in Sources */,
 				3F7E50F42094BB9A0021AAE6 /* IOS_Werkstuk2.xcdatamodeld in Sources */,
 				3F7E50EC2094BB9A0021AAE6 /* AppDelegate.swift in Sources */,
+				3F7E5123209899570021AAE6 /* VilloStation.swift in Sources */,
 				3F7E51202094BC0A0021AAE6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

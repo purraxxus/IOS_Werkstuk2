@@ -9,6 +9,8 @@
 import UIKit
 import MapKit
 
+var VilloStations: [VilloStation] = []
+
 class HomeViewController: UIViewController {
 
     @IBOutlet var mapView: MKMapView!
