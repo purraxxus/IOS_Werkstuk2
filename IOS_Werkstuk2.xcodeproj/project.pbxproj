@@ -16,7 +16,6 @@
 		3F7E51042094BB9A0021AAE6 /* IOS_Werkstuk2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E51032094BB9A0021AAE6 /* IOS_Werkstuk2Tests.swift */; };
 		3F7E510F2094BB9A0021AAE6 /* IOS_Werkstuk2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E510E2094BB9A0021AAE6 /* IOS_Werkstuk2UITests.swift */; };
 		3F7E51202094BC0A0021AAE6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E511F2094BC0A0021AAE6 /* HomeViewController.swift */; };
-		3F7E5123209899570021AAE6 /* VilloStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E5122209899570021AAE6 /* VilloStation.swift */; };
 		3F7E512520989CDE0021AAE6 /* Annotiation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7E512420989CDE0021AAE6 /* Annotiation.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +52,6 @@
 		3F7E510E2094BB9A0021AAE6 /* IOS_Werkstuk2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_Werkstuk2UITests.swift; sourceTree = "<group>"; };
 		3F7E51102094BB9A0021AAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F7E511F2094BC0A0021AAE6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		3F7E5122209899570021AAE6 /* VilloStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VilloStation.swift; sourceTree = "<group>"; };
 		3F7E512420989CDE0021AAE6 /* Annotiation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotiation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,7 +161,6 @@
 		3F7E5121209899400021AAE6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3F7E5122209899570021AAE6 /* VilloStation.swift */,
 				3F7E512420989CDE0021AAE6 /* Annotiation.swift */,
 			);
 			name = Model;
@@ -307,7 +304,6 @@
 				3F7E50EE2094BB9A0021AAE6 /* ViewController.swift in Sources */,
 				3F7E50F42094BB9A0021AAE6 /* IOS_Werkstuk2.xcdatamodeld in Sources */,
 				3F7E50EC2094BB9A0021AAE6 /* AppDelegate.swift in Sources */,
-				3F7E5123209899570021AAE6 /* VilloStation.swift in Sources */,
 				3F7E51202094BC0A0021AAE6 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,6 +549,7 @@
 				3F7E51152094BB9A0021AAE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F7E51162094BB9A0021AAE6 /* Build configuration list for PBXNativeTarget "IOS_Werkstuk2Tests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +558,7 @@
 				3F7E51182094BB9A0021AAE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F7E51192094BB9A0021AAE6 /* Build configuration list for PBXNativeTarget "IOS_Werkstuk2UITests" */ = {
 			isa = XCConfigurationList;
@@ -569,6 +567,7 @@
 				3F7E511B2094BB9A0021AAE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
