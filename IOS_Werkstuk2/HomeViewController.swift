@@ -10,6 +10,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     var annotations: [Annotation] = []
     
     @IBAction func buttonAction(_ sender: Any) {
+        dispatchGroup.enter()
         showData(dataSet: annotations)
     }
     
@@ -19,7 +20,10 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         super.viewDidLoad()
         mapView.delegate = self
         mapView.showsUserLocation = true
+        dispatchGroup.enter()
         getData(urlString: "https://api.jcdecaux.com/vls/v1/stations?apiKey=c7e226e356101d8a519809679aba25090209ca8e")
+        dispatchGroup.wait()
+        dispatchGroup.enter()
         self.showData(dataSet: self.annotations)
         print("test")
     }
@@ -29,7 +33,12 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     }
     
     func showData(dataSet: [Annotation]){
-        self.mapView.addAnnotations(dataSet)
+        let allAnnotations = self.mapView.annotations
+        self.mapView.removeAnnotations(allAnnotations)
+        for marker in dataSet {
+            mapView.addAnnotation(marker)
+        }
+        dispatchGroup.leave()
     }
     
     func getData(urlString: String){
@@ -56,6 +65,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MKMapView
                 let annotation = Annotation(title: name!, subtitle: "test", coordinate: CLLocationCoordinate2DMake(50.7756865,4.19168370))
                 self.annotations.append(annotation)
             }
+            self.dispatchGroup.leave()
         }
         task.resume()
     }
