@@ -11,6 +11,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     
     @IBAction func buttonAction(_ sender: Any) {
         dispatchGroup.enter()
+        self.lastUpdated.text = NSLocalizedString("Last update", comment: "") + ": " + getTodayString()
         showData(dataSet: annotations)
     }
     
@@ -19,7 +20,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.lastUpdated.text = NSLocalizedString("Last update", comment: "")
+        self.lastUpdated.text = NSLocalizedString("Last update", comment: "") + ": " + getTodayString()
         self.updateButton.setTitle(NSLocalizedString("Update", comment: ""), for: .normal)
         
         mapView.delegate = self
@@ -45,6 +46,20 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         dispatchGroup.leave()
     }
     
+    func getTodayString() -> String{
+        let date = Date()
+        let calender = Calendar.current
+        let components = calender.dateComponents([.year,.month,.day,.hour,.minute,.second], from: date)
+        let year = components.year
+        let month = components.month
+        let day = components.day
+        let hour = components.hour
+        let minute = components.minute
+        let second = components.second
+        let today_string = String(year!) + "-" + String(month!) + "-" + String(day!) + " " + String(hour!)  + ":" + String(minute!) + ":" +  String(second!)
+        return today_string
+    }
+    
     func getData(urlString: String){
         let url = URL(string: urlString)
         let urlRequest = URLRequest(url: url!)
@@ -65,13 +80,9 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MKMapView
                 return
             }
             for value in villoData {
-                let enter = "\n"
-                let stands = NSLocalizedString("available stands: ", comment: "")
                 let bikes = NSLocalizedString("available bikes: ", comment: "")
                 let name = value["name"] as? String ?? NSLocalizedString("no name available", comment: "")
                 let status = value["status"] as? String ?? NSLocalizedString("no status available", comment: "")
-                let address = value["address"] as? String ?? NSLocalizedString("no address available", comment: "")
-                let available_bike_stands = value["available_bike_stands"] as? String ?? NSLocalizedString("no bike stands data available", comment: "")
                 let available_bikes = value["available_bikes"] as? String ?? NSLocalizedString("no bike data available", comment: "")
                 var lat:Double = 0.0
                 var lng:Double = 0.0
@@ -83,7 +94,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MKMapView
                         lng = posValue as! Double
                     }
                 }
-                let annotation = Annotation(title: name, subtitle: address + enter + status + enter + stands + available_bike_stands + enter + bikes + available_bikes, coordinate: CLLocationCoordinate2DMake(lat,lng))
+                let annotation = Annotation(title: name, subtitle: status + " - " + bikes + available_bikes, coordinate: CLLocationCoordinate2DMake(lat,lng))
                 self.annotations.append(annotation)
             }
             self.dispatchGroup.leave()
