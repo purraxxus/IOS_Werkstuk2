@@ -18,6 +18,10 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MKMapView
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.lastUpdated.text = NSLocalizedString("Last update", comment: "")
+        self.updateButton.setTitle(NSLocalizedString("Update", comment: ""), for: .normal)
+        
         mapView.delegate = self
         mapView.showsUserLocation = true
         dispatchGroup.enter()
@@ -62,13 +66,13 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MKMapView
             }
             for value in villoData {
                 let enter = "\n"
-                let stands = "available stands: "
-                let bikes = "available bikes: "
-                let name = value["name"] as? String ?? "no name available"
-                let status = value["status"] as? String ?? "no status available"
-                let address = value["address"] as? String ?? "no address available"
-                let available_bike_stands = value["available_bike_stands"] as? String ?? "no bike stands data available"
-                let available_bikes = value["available_bikes"] as? String ?? "no bike data available"
+                let stands = NSLocalizedString("available stands: ", comment: "")
+                let bikes = NSLocalizedString("available bikes: ", comment: "")
+                let name = value["name"] as? String ?? NSLocalizedString("no name available", comment: "")
+                let status = value["status"] as? String ?? NSLocalizedString("no status available", comment: "")
+                let address = value["address"] as? String ?? NSLocalizedString("no address available", comment: "")
+                let available_bike_stands = value["available_bike_stands"] as? String ?? NSLocalizedString("no bike stands data available", comment: "")
+                let available_bikes = value["available_bikes"] as? String ?? NSLocalizedString("no bike data available", comment: "")
                 var lat:Double = 0.0
                 var lng:Double = 0.0
                 for (pos,posValue) in (value["position"] as? NSDictionary)!{
