@@ -42,6 +42,7 @@
 		3F3BDA7220A5C089003BE4D5 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		3F3BDA7420A5C0A6003BE4D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3F3BDA7620A5C0B4003BE4D5 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3F3BDA7720A5C223003BE4D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3F7E50E82094BB9A0021AAE6 /* IOS_Werkstuk2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_Werkstuk2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F7E50EB2094BB9A0021AAE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F7E50ED2094BB9A0021AAE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -353,6 +354,7 @@
 			children = (
 				3F3BDA7420A5C0A6003BE4D5 /* en */,
 				3F3BDA7620A5C0B4003BE4D5 /* nl */,
+				3F3BDA7720A5C223003BE4D5 /* Base */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
