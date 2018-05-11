@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Last update:"; ObjectID = "kCZ-1w-2U3"; */
+"kCZ-1w-2U3.text" = "Last update:";
+
+/* Class = "UIButton"; accessibilityLabel = "Update"; ObjectID = "rue-e4-y3J"; */
+"rue-e4-y3J.accessibilityLabel" = "Update";
+
+/* Class = "UIButton"; normalTitle = "Update"; ObjectID = "rue-e4-y3J"; */
+"rue-e4-y3J.normalTitle" = "Update";
